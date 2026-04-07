@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pickle - Bold Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;600;800;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "pickle-vibrant": "#BEF264",
+                        "pickle-neon": "#A3E635",
+                        "deep-black": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Archivo Black", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --neon-glow: 0 0 25px rgba(163, 230, 53, 0.7);
+            --neon-glow-hover: 0 0 35px rgba(163, 230, 53, 0.9);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            background-color: #FFFFFF;
+            min-height: max(844px, 100dvh);
+        }
+        .neon-btn {
+            box-shadow: var(--neon-glow);
+            transition: all 0.3s ease;
+        }
+        .neon-btn:active {
+            box-shadow: 0 0 15px rgba(163, 230, 53, 0.5);
+            transform: scale(0.96);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1.5px #0A0A0A;
+            color: transparent;
+        }
+        .dynamic-rotation-1 { transform: rotate(-8deg) scale(1.05); }
+        .dynamic-rotation-2 { transform: rotate(4deg) scale(1.02); }
+        .custom-logo-icon {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-circle {
+            width: 32px;
+            height: 32px;
+            border: 5px solid #A3E635;
+            border-radius: 9999px;
+            position: relative;
+        }
+        .logo-strike {
+            position: absolute;
+            width: 4px;
+            height: 48px;
+            background-color: #A3E635;transform: rotate(-15deg);
+            top: -2px;left: 26px;
+            border-radius: 2px;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased text-deep-black overflow-hidden bg-white">
+<div class="relative flex h-screen w-full flex-col justify-between overflow-hidden px-6 pb-12 pt-12">
+<div class="absolute top-[-5%] right-[-10%] w-64 h-64 bg-pickle-vibrant/30 rounded-full blur-[80px]"></div>
+<div class="absolute bottom-[20%] left-[-10%] w-72 h-72 bg-pickle-neon/20 rounded-full blur-[100px]"></div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="flex flex-col items-center gap-1">
+<div class="bg-deep-black p-4 rounded-2xl rotate-[-4deg] mb-2 shadow-2xl flex items-center justify-center">
+<div class="custom-logo-icon">
+<div class="logo-circle"></div>
+<div class="logo-strike"></div>
+</div>
+</div>
+<h1 class="font-display text-5xl tracking-tighter uppercase text-deep-black">
+                Pickle
+            </h1>
+</div>
+</div>
+<div class="relative z-10 flex flex-1 items-center justify-center py-4">
+<div class="relative w-full max-w-[300px] aspect-[4/5]">
+<div class="absolute inset-0 bg-deep-black rounded-[2.5rem] dynamic-rotation-1 translate-x-4 opacity-10"></div>
+<div class="absolute inset-0 bg-pickle-vibrant rounded-[2.5rem] dynamic-rotation-2 border-4 border-deep-black"></div>
+<div class="absolute inset-0 bg-white rounded-[2.5rem] p-2 border-[3px] border-deep-black shadow-[12px_12px_0px_0px_rgba(10,10,10,1)] overflow-hidden">
+<div class="w-full h-full rounded-[2rem] overflow-hidden relative">
+<img alt="Diverse students hanging out" class="w-full h-full object-cover grayscale-[20%] contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChB0eZXyh5VDKoF4qkaO-CtW_-SGXbQQYWeuKJC2UgHLVOL9StB3bVeMeehViaH66cLFmwU8v_RZ90tfkGK4zhs3cW4o92T8PjnhCaEiEd6Ro0NRGfrhP6UCxpTFC5zoL3slEc4IE7i-DKO_YMgXuSiix7qmrpL7yCYVc3Dc0kAQeFtnyc3LWw9KkTLJhfethRBdctjYWiYOGsOHC-DnNNdkijl0sWDSePhKw5QJUN-jG7GV6zxi-CGrmlkzM_UEQ-6LZ8S_6mOA4x"/>
+<div class="absolute top-4 left-4 bg-deep-black text-pickle-neon px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest border border-pickle-neon/30">
+                        Live Now
+                    </div>
+<div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-deep-black via-deep-black/60 to-transparent">
+<div class="flex items-end justify-between">
+<div>
+<p class="text-pickle-vibrant font-black text-xs uppercase tracking-tighter">Next Venue</p>
+<p class="text-white font-display text-xl leading-tight">THE UNION PUB</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-pickle-neon flex items-center justify-center border-2 border-deep-black">
+<span class="material-symbols-outlined text-deep-black text-xl font-black">bolt</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-4 -right-2 bg-deep-black text-white px-5 py-3 rounded-2xl text-sm font-black shadow-2xl rotate-[8deg] border-2 border-pickle-vibrant">
+                GEN Z ONLY ⚡️
+            </div>
+</div>
+</div>
+<div class="relative z-10 flex flex-col w-full">
+<div class="text-center mb-10">
+<h2 class="font-display text-[42px] leading-[0.9] text-deep-black mb-4 tracking-tighter uppercase">
+                Ditch the <span class="text-stroke">Screen</span><br/>
+<span class="bg-pickle-vibrant px-2">Meet IRL.</span>
+</h2>
+<p class="text-slate-600 text-base font-bold max-w-[260px] mx-auto leading-tight italic">
+                Blind dates at your favorite local uni spots. No catfishing, just vibes.
+            </p>
+</div>
+<div class="flex flex-col items-center w-full gap-4">
+<button class="neon-btn w-full h-[72px] bg-pickle-neon text-deep-black rounded-[1.5rem] flex items-center justify-center gap-3 border-[3px] border-deep-black">
+<span class="text-xl font-black uppercase tracking-tight">Claim Your Spot</span>
+<span class="material-symbols-outlined text-2xl font-black">arrow_forward_ios</span>
+</button>
+<button class="w-full h-[64px] bg-white text-deep-black rounded-[1.5rem] flex items-center justify-center border-[3px] border-deep-black transition-transform active:scale-95">
+<span class="text-lg font-black uppercase">Sign In</span>
+</button>
+<div class="flex items-center gap-4 mt-2">
+<span class="h-[1px] w-8 bg-slate-200"></span>
+<p class="text-[10px] text-slate-400 font-black tracking-[0.2em] uppercase">
+                    Safety First • 18+ Only
+                </p>
+<span class="h-[1px] w-8 bg-slate-200"></span>
+</div>
+</div>
+</div>
+<div class="h-2"></div>
+</div>
+
+</body></html>

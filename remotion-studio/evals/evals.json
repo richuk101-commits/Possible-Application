@@ -1,0 +1,44 @@
+{
+  "skill_name": "remotion-studio",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to create a remotion project for a product promo video with 3D animations. Set up everything I need to get started.",
+      "expected_output": "A scaffolded Remotion project with all effects packages installed, example compositions including a 3D ThreeCanvas scene, and the studio server running.",
+      "files": [],
+      "expectations": [
+        "Output includes a Root.tsx file that registers compositions using <Composition>",
+        "Output includes a 3D scene component that imports ThreeCanvas from @remotion/three",
+        "Output references at least @remotion/three, three, and @types/three in the package list",
+        "At least 4 example compositions are registered in Root.tsx",
+        "Output includes a comprehensive list of npm packages to install (at least 10 @remotion/* packages)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Set up a new video animation project. I need smooth transitions between scenes and some organic particle effects for the background.",
+      "expected_output": "A Remotion project with transitions demo (fade/slide/wipe) and noise-driven particle composition, all packages installed, studio running.",
+      "files": [],
+      "expectations": [
+        "Output includes a transitions component that uses TransitionSeries from @remotion/transitions",
+        "Output demonstrates at least 2 different transition presentations (fade, slide, wipe, flip, or clockWipe)",
+        "Output includes a particle/noise component that uses noise2D from @remotion/noise",
+        "Output uses shape components or generators from @remotion/shapes",
+        "Package list includes both @remotion/transitions and @remotion/noise"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need to build an animated explainer video using React, with motion graphics and text animations that have a cinematic feel. Can you scaffold a project for me?",
+      "expected_output": "A Remotion project with motion blur text animation, spring physics, all effects packages, and a guide file explaining how to use each package.",
+      "files": [],
+      "expectations": [
+        "Output includes a component using CameraMotionBlur from @remotion/motion-blur",
+        "Output uses spring() function for physics-based animation",
+        "Output includes text animation with transform and/or opacity changes",
+        "Package list includes @remotion/motion-blur",
+        "A guide or reference file is produced explaining key packages and their usage"
+      ]
+    }
+  ]
+}

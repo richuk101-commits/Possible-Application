@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pickle Discover</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF007A",
+                        "accent": "#ADFF00",
+                        "surface": "#FFFFFF",
+                        "background": "#F4F4F9",
+                        "tag-pink": "#FF007A",
+                        "tag-green": "#00D1FF",
+                        "tag-purple": "#8A2BE2",
+                        "tag-orange": "#FF8A00",
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "card": "28px",
+                        "button": "16px",
+                    },
+                    boxShadow: {
+                        'punchy': '0 20px 0px -10px rgba(0,0,0,0.05), 0 25px 50px -12px rgba(0,0,0,0.15)',
+                        'pop-3d': '0 12px 0px 0px rgba(0,0,0,0.08), 0 30px 60px -12px rgba(0,0,0,0.2)',
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background text-black antialiased;
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .heavy-black {
+            font-weight: 900;
+        }
+        .profile-card {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .profile-card:active {
+            transform: scale(0.97) translateY(4px);
+            box-shadow: 0 4px 0px 0px rgba(0,0,0,0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col">
+<header class="sticky top-0 z-30 glass-header border-b-4 border-black px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary size-9 rounded-xl flex items-center justify-center -rotate-6 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-white text-xl font-bold">temp_preferences_custom</span>
+</div>
+<h1 class="text-2xl heavy-black tracking-tighter text-black italic">PICKLE</h1>
+</div>
+<div class="flex gap-3">
+<button class="size-11 rounded-2xl bg-white border-2 border-black flex items-center justify-center text-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all">
+<span class="material-symbols-outlined text-[24px] font-bold">tune</span>
+</button>
+<button class="size-11 rounded-2xl bg-white border-2 border-black flex items-center justify-center text-black relative shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all">
+<span class="material-symbols-outlined text-[24px] font-bold">notifications</span>
+<span class="absolute top-1 right-1 size-3 bg-primary rounded-full border-2 border-black"></span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto hide-scrollbar pb-32">
+<div class="flex gap-3 px-6 py-6 overflow-x-auto hide-scrollbar">
+<button class="px-6 py-2.5 rounded-full bg-black text-white text-sm heavy-black shrink-0 border-2 border-black">
+            FOR YOU
+        </button>
+<button class="px-6 py-2.5 rounded-full bg-white border-2 border-black text-black text-sm heavy-black shrink-0 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            UNI LIFE
+        </button>
+<button class="px-6 py-2.5 rounded-full bg-white border-2 border-black text-black text-sm heavy-black shrink-0 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            EVENTS
+        </button>
+<button class="px-6 py-2.5 rounded-full bg-white border-2 border-black text-black text-sm heavy-black shrink-0 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            CLUBS
+        </button>
+</div>
+<div class="px-6 space-y-10">
+<div class="profile-card bg-white rounded-card border-4 border-black shadow-pop-3d overflow-hidden">
+<div class="relative aspect-[1/1] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6ZW95E_ERBPovbOxSpLqsMNjno8m6LdpHTY2chbUWE_--9YZYEciTPQR0YTb7fWXIjl0r-SS4jSEJ84uJ57arFJYZG1XiD49pfcvz4kTA_SXxWBpx_WJCas71-_yhGZpCKB-KYhiLCTQ6qBeTeWSJl7OPWTMZTxIM96t67B5IZUC-bN_w3dix8vUBVIJTVZ7R9lrZ-y1Q4PUSQIlzHoWgyA0N33dQyE418nhysly7Ak7Wkc7wvMS1wzHgviWWEC5dq07xn0L0aFRf');">
+<div class="absolute inset-0 backdrop-blur-3xl bg-white/20"></div>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<div class="size-40 bg-white p-1 rounded-[40px] border-4 border-black shadow-xl rotate-3">
+<div class="w-full h-full bg-accent rounded-[32px] flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-black text-8xl" style="font-variation-settings: 'FILL' 1">face_3</span>
+</div>
+</div>
+<div class="mt-6 px-5 py-2 bg-black rounded-full border-2 border-black shadow-lg">
+<span class="text-xs heavy-black tracking-[0.2em] text-white uppercase">Identity Hidden</span>
+</div>
+</div>
+<div class="absolute top-4 left-4 bg-accent border-2 border-black rounded-xl px-4 py-2 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<div class="size-2.5 rounded-full bg-black"></div>
+<span class="text-xs heavy-black text-black tracking-tighter">UCL • ACTIVE</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h2 class="text-3xl heavy-black text-black tracking-tight leading-none mb-1">ARTISTIC SOUL, 20</h2>
+<p class="text-black/60 font-extrabold text-sm uppercase tracking-wider">Fine Arts • 1.2 miles away</p>
+</div>
+<button class="bg-black/5 p-2 rounded-xl">
+<span class="material-symbols-outlined font-black">more_horiz</span>
+</button>
+</div>
+<p class="text-black text-lg leading-snug mb-6 heavy-black italic">
+                    "I will judge your coffee order but in a cute way. Looking for someone to haunt record stores with."
+                </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-5 py-2 rounded-xl bg-primary text-white text-xs heavy-black border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">VINYL</span>
+<span class="px-5 py-2 rounded-xl bg-accent text-black text-xs heavy-black border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">THRIFTING</span>
+<span class="px-5 py-2 rounded-xl bg-tag-green text-black text-xs heavy-black border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">MATCHA</span>
+</div>
+<button class="w-full bg-accent text-black heavy-black py-5 rounded-button flex items-center justify-center gap-3 text-xl border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all">
+<span class="material-symbols-outlined text-[28px] font-black">local_cafe</span>
+                    INVITE TO VENUE
+                </button>
+</div>
+</div>
+<div class="profile-card bg-white rounded-card border-4 border-black shadow-pop-3d overflow-hidden">
+<div class="relative aspect-[1/1] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMje18uvawpFHv_Fw2R4LQWJZAC9kUpEwIbOyr_opaWlRNa5-wVipd55YGitMr235ba9v_HANNZ6XeheSZRliMKZoFwCJM8ezjjHNV6AJjYhki82JdyGeszfPTgEQjiFZIqomvwMTqsB-PsceGMfeGYoGqw-4edMGdldgWDrQ4UsPDKCI-Z0scY6D59ESXGhZIDV0_QfkYdFMEu_wGDFmjpShv7B8IP2HeNnWw2xV0-5zaeZevDk9ekV-9L5-H6QgHvNXvyyNgwgNh');">
+<div class="absolute inset-0 backdrop-blur-3xl bg-white/20"></div>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<div class="size-40 bg-white p-1 rounded-[40px] border-4 border-black shadow-xl -rotate-3">
+<div class="w-full h-full bg-primary rounded-[32px] flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-white text-8xl" style="font-variation-settings: 'FILL' 1">face_5</span>
+</div>
+</div>
+<div class="mt-6 px-5 py-2 bg-black rounded-full border-2 border-black shadow-lg">
+<span class="text-xs heavy-black tracking-[0.2em] text-white uppercase">Identity Hidden</span>
+</div>
+</div>
+<div class="absolute top-4 left-4 bg-primary border-2 border-black rounded-xl px-4 py-2 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<div class="size-2.5 rounded-full bg-white"></div>
+<span class="text-xs heavy-black text-white tracking-tighter uppercase">Imperial • Active</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h2 class="text-3xl heavy-black text-black tracking-tight leading-none mb-1">TECH WIZ, 22</h2>
+<p class="text-black/60 font-extrabold text-sm uppercase tracking-wider">Comp Sci • 0.8 miles away</p>
+</div>
+<button class="bg-black/5 p-2 rounded-xl">
+<span class="material-symbols-outlined font-black">more_horiz</span>
+</button>
+</div>
+<p class="text-black text-lg leading-snug mb-6 heavy-black italic">
+                    "Looking for a study buddy who actually studies. If you can explain recursion, drinks are on me."
+                </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-5 py-2 rounded-xl bg-tag-purple text-white text-xs heavy-black border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">CODING</span>
+<span class="px-5 py-2 rounded-xl bg-tag-orange text-white text-xs heavy-black border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">SCI-FI</span>
+<span class="px-5 py-2 rounded-xl bg-primary text-white text-xs heavy-black border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">RAMEN</span>
+</div>
+<button class="w-full bg-primary text-white heavy-black py-5 rounded-button flex items-center justify-center gap-3 text-xl border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all">
+<span class="material-symbols-outlined text-[28px] font-black">sports_esports</span>
+                    INVITE TO VENUE
+                </button>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t-4 border-black px-6 pb-8 pt-4">
+<div class="max-w-md mx-auto flex items-center justify-between">
+<a class="flex flex-col items-center gap-1 text-black" href="#">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1, 'wght' 700">explore</span>
+<span class="text-[11px] heavy-black uppercase tracking-tighter">Discover</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/40" href="#">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 700">chat_bubble</span>
+<span class="text-[11px] heavy-black uppercase tracking-tighter">Invites</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/40" href="#">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 700">location_on</span>
+<span class="text-[11px] heavy-black uppercase tracking-tighter">Venues</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/40" href="#">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 700">person</span>
+<span class="text-[11px] heavy-black uppercase tracking-tighter">Profile</span>
+</a>
+</div>
+</nav>
+<div class="fixed bottom-32 right-6 z-30">
+<button class="size-16 bg-accent text-black rounded-2xl border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center rotate-6 active:rotate-0 active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-3xl font-black">bolt</span>
+</button>
+</div>
+
+</body></html>

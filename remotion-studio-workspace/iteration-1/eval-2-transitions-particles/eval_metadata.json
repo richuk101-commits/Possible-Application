@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "transitions-particles",
+  "prompt": "Set up a new video animation project. I need smooth transitions between scenes and some organic particle effects for the background.",
+  "assertions": [
+    "Output includes a transitions component that uses TransitionSeries from @remotion/transitions",
+    "Output demonstrates at least 2 different transition presentations (fade, slide, wipe, flip, or clockWipe)",
+    "Output includes a particle/noise component that uses noise2D from @remotion/noise",
+    "Output uses shape components or generators from @remotion/shapes",
+    "Package list includes both @remotion/transitions and @remotion/noise"
+  ]
+}

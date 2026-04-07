@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "remotion-studio",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/.bin/remotion", "studio"],
+      "port": 3000,
+      "cwd": "spacecraft-studios-promo-vid"
+    }
+  ]
+}

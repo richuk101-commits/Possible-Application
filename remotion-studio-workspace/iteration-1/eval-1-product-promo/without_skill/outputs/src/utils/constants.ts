@@ -1,0 +1,32 @@
+// Video dimensions and timing
+export const VIDEO_WIDTH = 1920;
+export const VIDEO_HEIGHT = 1080;
+export const VIDEO_FPS = 30;
+
+// Duration in seconds for each section
+export const INTRO_DURATION_SEC = 3;
+export const PRODUCT_SHOWCASE_DURATION_SEC = 5;
+export const FEATURE_HIGHLIGHTS_DURATION_SEC = 6;
+export const CTA_DURATION_SEC = 3;
+
+// Total duration
+export const TOTAL_DURATION_SEC =
+  INTRO_DURATION_SEC +
+  PRODUCT_SHOWCASE_DURATION_SEC +
+  FEATURE_HIGHLIGHTS_DURATION_SEC +
+  CTA_DURATION_SEC;
+
+// Duration in frames for each section
+export const INTRO_DURATION = INTRO_DURATION_SEC * VIDEO_FPS; // 90 frames
+export const PRODUCT_SHOWCASE_DURATION = PRODUCT_SHOWCASE_DURATION_SEC * VIDEO_FPS; // 150 frames
+export const FEATURE_HIGHLIGHTS_DURATION = FEATURE_HIGHLIGHTS_DURATION_SEC * VIDEO_FPS; // 180 frames
+export const CTA_DURATION = CTA_DURATION_SEC * VIDEO_FPS; // 90 frames
+
+export const DURATION_IN_FRAMES = TOTAL_DURATION_SEC * VIDEO_FPS; // 510 frames = 17 seconds
+
+// Sequence start frames
+export const INTRO_START = 0;
+export const PRODUCT_SHOWCASE_START = INTRO_DURATION;
+export const FEATURE_HIGHLIGHTS_START = INTRO_DURATION + PRODUCT_SHOWCASE_DURATION;
+export const CTA_START =
+  INTRO_DURATION + PRODUCT_SHOWCASE_DURATION + FEATURE_HIGHLIGHTS_DURATION;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vibrant Venues List</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7bf425",
+                        "electric-blue": "#0052FF",
+                        "hot-pink": "#FF007A",
+                        "bg-vibrant": "#F0F2F5",
+                    },
+                    fontFamily: {
+                        "display": ["Archivo", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.25rem",
+                        "xl": "1.5rem",
+                        "2xl": "2.5rem",
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Archivo', sans-serif;
+                -webkit-tap-highlight-color: transparent;
+                background-color: #F0F2F5;
+            }
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px black;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-black font-display">
+<div class="relative flex min-h-screen w-full max-w-[430px] mx-auto flex-col bg-bg-vibrant overflow-x-hidden border-x border-black/5">
+<header class="sticky top-0 z-30 bg-white border-b-4 border-black px-6 pt-14 pb-6">
+<div class="flex items-center justify-between mb-6">
+<div class="flex flex-col">
+<h1 class="text-3xl font-black uppercase tracking-tighter text-black leading-none">Verified Venues</h1>
+<div class="flex items-center gap-1 mt-1">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<p class="text-[12px] font-black uppercase tracking-widest text-black/40">Gen-Z Approved • 100% Safe</p>
+</div>
+</div>
+<button class="flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-[4px_4px_0px_0px_rgba(123,244,37,1)]">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</button>
+</div>
+<div class="flex gap-3 overflow-x-auto hide-scrollbar">
+<button class="flex h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary border-2 border-black px-6 text-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+<span class="text-sm font-black uppercase italic">Top Picks</span>
+</button>
+<button class="flex h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border-2 border-black px-6 text-black hover:bg-slate-50 transition-colors">
+<span class="text-sm font-extrabold uppercase">Cafes</span>
+</button>
+<button class="flex h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border-2 border-black px-6 text-black hover:bg-slate-50 transition-colors">
+<span class="text-sm font-extrabold uppercase">Bars</span>
+</button>
+<button class="flex h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-white border-2 border-black px-6 text-black hover:bg-slate-50 transition-colors">
+<span class="text-sm font-extrabold uppercase">Indie</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-4 pt-6 pb-36 space-y-8">
+<div class="bg-white rounded-3xl overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+<div class="relative aspect-[1.1/1] w-full overflow-hidden border-b-4 border-black">
+<img alt="Trendy neon bar interior" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Bd6MGP_LcPR7VqEtC8NfRHnJLFdWhwCsFr0I2g2qLogmDl3EJQvZ3vIM_jTFWXL3BkhNm03TUJiZHgq-ZOYrJVJo7OqgQgSvbzSz8sV70eX5LCDnpz69-ZP011nNNR5iwzrMa5mK2iXdPLXRQGFDhZt_ZIBl70gVgTVR6vXUznzNWpKE24YKkMTT8W62rhqIvaMk7zOoP2W0jdHdbb3EJ2_-ASbZx2wdYwByubIS4skQu3_A3xKZQynVyGeKrFuOV2x2VwE1_JDo"/>
+<div class="absolute top-4 left-4 right-4 flex justify-between items-start">
+<div class="flex items-center gap-1.5 rounded-lg bg-electric-blue px-3 py-2 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-[18px] text-white fill-1">verified_user</span>
+<span class="text-[11px] font-black uppercase tracking-tighter text-white">Safety Verified</span>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-hot-pink border-2 border-black text-white shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-[22px] fill-1">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-4 left-4">
+<div class="flex items-center gap-1.5 rounded-lg bg-black px-3 py-2 text-primary border border-primary/30">
+<span class="material-symbols-outlined text-[18px] fill-1">star</span>
+<span class="text-xs font-black uppercase italic">10/10 Vibe</span>
+</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<div class="flex-1">
+<h3 class="text-3xl font-black text-black leading-none uppercase italic tracking-tighter">The Neon Social</h3>
+<div class="flex items-center gap-1 text-black/60 mt-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="text-xs font-bold uppercase tracking-tight">0.5 mi • Campus Center</span>
+</div>
+</div>
+<div class="bg-primary border-2 border-black px-3 py-1 rounded-md shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+<span class="text-sm font-black">$$</span>
+</div>
+</div>
+<p class="text-[15px] font-medium text-black/70 line-clamp-2 leading-tight mb-6">
+                    Loud music, neon lights, and the best cocktails in town. Secure entry and female-friendly staff always on duty.
+                </p>
+<div class="flex items-center justify-between pt-6 border-t-2 border-black/5">
+<div class="flex -space-x-3">
+<img alt="User" class="h-10 w-10 rounded-full border-2 border-black object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGgiTvCl_WO5QxbLKNWhinRT7Rmai5yvH-b4-OQcw2AbV2VMGojsdMcaMilc_PKXL5h8gqhTlbYQRpJObYc7jkIx9i1-31kMEgPoGWoN0WTgrcsp5uvr1n4tOzJi7R4gMs4C-exqglD8itpavsgEj9TiYJWjtnsUtdnXB1KRC7RsB3zuelwRiUlHTbU8eq-BUo_b-g5UnOkHWIrhXVikISswV60o6m9yH9EWfViF93UtartoXqytKQWQkAuX1ve_l4Uwy1qx0O8byM"/>
+<img alt="User" class="h-10 w-10 rounded-full border-2 border-black object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTjAEMNEcozQy8jq-cfn-G6tNxpmTm8InHCCYKN2Ovy0eDW5haH0S2WWhnvTJ0pNFRvqJD2VBcTcHLd8LnoqlZKMLykMH256iqFKa-kIIjEaLDVLWJM_GTosihFQeMfQaGlkeJk5f_mHy5Tryi_PynMumk2rri5JMNY7tARu0Y0_pgz4zp9YXRJkOsjFlKWxbXNbLwTv_na037-C0EQGwU2F07jTkH4X2RVKKXOsuOC-JRgEhPqRGnCKexyYFFr61nW0lm0dwqLIE0"/>
+<div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-primary text-[11px] font-black">
+                            +12
+                        </div>
+</div>
+<button class="h-14 rounded-xl bg-black px-8 text-base font-black uppercase tracking-widest text-primary active:translate-y-1 transition-all shadow-[4px_4px_0px_0px_rgba(123,244,37,1)] border-2 border-black">
+                        Book Now
+                    </button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-3xl overflow-hidden border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+<div class="relative aspect-[1.1/1] w-full overflow-hidden border-b-4 border-black">
+<img alt="Minimalist modern cafe" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZpoNvYgoA6KWBSrdg_fvCJ9LxlR77k1u2p3rRGQ-ttdwOTiUM_0Tcrf35DHPpvMjMtOyusJRiak6SZ9boQeKLkk3Tfh56j1-5Legyy9GKAOUkvAj31sqLDYMejIXQdHsVocG4CwGcWDQjYmJsX3JYbGEa0DRxnb3oXKkIYXE6BaYI6wSsgns_Nlk5AFYpRgP1Z37yaTEcTKzDwsXlKvwoa05_Er6gS9tQTphqxZlmIOnJltuK1mgs1i_Rq_HXCJBLGI2RQhGwMupH"/>
+<div class="absolute top-4 left-4 right-4 flex justify-between items-start">
+<div class="flex items-center gap-1.5 rounded-lg bg-electric-blue px-3 py-2 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-[18px] text-white fill-1">verified_user</span>
+<span class="text-[11px] font-black uppercase tracking-tighter text-white">Safety Verified</span>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-white border-2 border-black text-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-4 left-4">
+<div class="flex items-center gap-1.5 rounded-lg bg-black px-3 py-2 text-primary border border-primary/30">
+<span class="material-symbols-outlined text-[18px] fill-1">star</span>
+<span class="text-xs font-black uppercase italic">9.8/10 Vibe</span>
+</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<div class="flex-1">
+<h3 class="text-3xl font-black text-black leading-none uppercase italic tracking-tighter">Aesthetic Brews</h3>
+<div class="flex items-center gap-1 text-black/60 mt-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="text-xs font-bold uppercase tracking-tight">0.2 mi • High Street</span>
+</div>
+</div>
+<div class="bg-primary border-2 border-black px-3 py-1 rounded-md shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+<span class="text-sm font-black">$</span>
+</div>
+</div>
+<p class="text-[15px] font-medium text-black/70 line-clamp-2 leading-tight mb-6">
+                    The ultimate Gen-Z coffee spot. Minimalist, quiet, and perfectly lit for your date photos.
+                </p>
+<div class="flex items-center justify-between pt-6 border-t-2 border-black/5">
+<div class="flex -space-x-3">
+<img alt="User" class="h-10 w-10 rounded-full border-2 border-black object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9cySQ8hZCD6l9CiUWEQJvCGV_m0epUv8vELZ1JvAQIsmkZeUw6o1ZndzeJyuFqejreGV-r4qXmLmRgsjCkLpzDqpX3qBPm1hN8xHPzgAr5ya_StLijKW3FInUc7JtHmLHRbcklxiAM7gJ9DPVLajgN2DNXZA0Yl2lXBcCadDwrHHK4mTD6M3OG9pAsk6YVKYxg-tWqI8v5kA-G1yG_ooxVydNXCIEsnu1aXbJ3VgTrsxcKwD8iKcXYFTz-l0v15wfke5zFTZrafH5"/>
+<img alt="User" class="h-10 w-10 rounded-full border-2 border-black object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWjOpqoGATzLPxz7aw2X2OELujLsRRn-Wm7NmVOUA0EFqzlbr4sXe40ABzEfms4asdDg7ZUFNl2NyxmGbZHxG6pBeY_k9QSJyKajBvs63cCW82_q31FVTYmg9sQMQFUsGRQ6stgh-_D_PV9-_S_Hw9zq5NcKnZ8SiK_Ht82TtfITBEr_DtABnHJmfKTao9lEbcOMq8BbWbneHzgEnJhSlbgBrwfUj7St0XT7z4WYgQ1a7UahpUwVTpusgt_CkBActAJ_IXbb1vU-xt"/>
+<div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-primary text-[11px] font-black">
+                            +8
+                        </div>
+</div>
+<button class="h-14 rounded-xl bg-primary px-8 text-base font-black uppercase tracking-widest text-black active:translate-y-1 transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black">
+                        Grab Spot
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 z-40 w-full max-w-[430px] bg-white border-t-4 border-black px-6 pt-4 pb-8">
+<div class="flex items-center justify-between">
+<a class="flex flex-col items-center gap-1 text-black/40" href="#">
+<span class="material-symbols-outlined text-[28px]">explore</span>
+<span class="text-[10px] font-black uppercase tracking-widest">Discover</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/40" href="#">
+<span class="material-symbols-outlined text-[28px]">mail</span>
+<span class="text-[10px] font-black uppercase tracking-widest">Invites</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black" href="#">
+<span class="material-symbols-outlined text-[28px] fill-1 text-hot-pink">location_on</span>
+<span class="text-[10px] font-black uppercase tracking-widest">Venues</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/40" href="#">
+<span class="material-symbols-outlined text-[28px]">person</span>
+<span class="text-[10px] font-black uppercase tracking-widest">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

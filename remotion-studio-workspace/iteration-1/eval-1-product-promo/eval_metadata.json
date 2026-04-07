@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "product-promo-3d",
+  "prompt": "I want to create a remotion project for a product promo video with 3D animations. Set up everything I need to get started.",
+  "assertions": [
+    "Output includes a Root.tsx file that registers compositions using <Composition>",
+    "Output includes a 3D scene component that imports ThreeCanvas from @remotion/three",
+    "Output references at least @remotion/three, three, and @types/three in the package list",
+    "At least 4 example compositions are registered in Root.tsx",
+    "Output includes a comprehensive list of npm packages to install (at least 10 @remotion/* packages)"
+  ]
+}

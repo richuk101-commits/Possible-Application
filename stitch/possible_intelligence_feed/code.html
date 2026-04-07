@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Possible | Premium Proptech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-command {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .shadow-ambient {
+            box-shadow: 0 20px 50px -12px rgba(19, 27, 46, 0.08);
+        }
+        .mono-metrics {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#eef0ff",
+                    "background": "#faf8ff",
+                    "inverse-surface": "#283044",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#131b2e",
+                    "on-primary-fixed": "#00201d",
+                    "on-primary-container": "#f4fffc",
+                    "on-tertiary-container": "#f5fff6",
+                    "tertiary-fixed": "#6ffbbe",
+                    "secondary": "#4648d4",
+                    "on-secondary-fixed": "#07006c",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "on-background": "#131b2e",
+                    "secondary-fixed-dim": "#c0c1ff",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e2e7ff",
+                    "on-tertiary-fixed": "#002113",
+                    "surface-container-low": "#f2f3ff",
+                    "surface-dim": "#d2d9f4",
+                    "surface-container": "#eaedff",
+                    "secondary-container": "#6063ee",
+                    "tertiary": "#006947",
+                    "surface-variant": "#dae2fd",
+                    "tertiary-container": "#00855b",
+                    "surface-container-highest": "#dae2fd",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#bcc9c6",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#2f2ebe",
+                    "surface-bright": "#faf8ff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#005049",
+                    "surface": "#faf8ff",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "outline": "#6d7a77",
+                    "on-surface-variant": "#3d4947",
+                    "on-secondary-container": "#fffbff",
+                    "primary-container": "#008378",
+                    "surface-tint": "#006a61",
+                    "inverse-primary": "#6bd8cb",
+                    "primary": "#00685f",
+                    "primary-fixed": "#89f5e7",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#e1e0ff",
+                    "primary-fixed-dim": "#6bd8cb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex overflow-hidden">
+<!-- Predicted Component: SideNavBar -->
+<aside class="fixed left-0 top-0 bottom-0 flex flex-col justify-between py-8 px-6 h-screen w-60 border-r-0 bg-surface-container-low font-sans antialiased tracking-tight text-sm font-medium">
+<div class="space-y-10">
+<div class="space-y-1">
+<h1 class="text-2xl font-bold tracking-tighter text-primary">Possible</h1>
+<p class="text-[10px] tracking-[0.2em] font-bold text-on-surface-variant uppercase">The Intelligent Estate</p>
+</div>
+<nav class="space-y-1">
+<!-- Feed (Active) -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-primary font-semibold border-r-2 border-primary hover:bg-surface-container-high transition-colors Active: opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="dynamic_feed">dynamic_feed</span>
+                    Feed
+                </a>
+<!-- Archive -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors Active: opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="archive">archive</span>
+                    Archive
+                </a>
+<!-- Settings -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors Active: opacity-80 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                    Settings
+                </a>
+</nav>
+</div>
+<div class="flex items-center gap-3 p-2 rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer">
+<img alt="James Miller" class="w-10 h-10 rounded-full object-cover" data-alt="Professional headshot of a middle-aged man with short dark hair in a business casual blazer, soft studio lighting, clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDffMM25tw6R5Se_A4l7UychoKSrucAU7YDuPH6cuUMT2wZrmCICjABJLlwtN5mMQOTWa1TbFYcVxPgpen0Kyob8igPWS0cT3I-g1eeQNzZeyd8mtIvn-xRsFBnGMEzFrCV5GAfJ2ovzBIAEFKYPvAHRmRYjZIQmesdK5DgCwjka_qt59oOuDE3KvFuE32Fs-wq1SF86F4YhJeKeIcuIe63EXOkIlWTbWc_jhfNvYzAIc2EoU35j8BpR7f4Rd_kCf-WLMF9Nu8_Y0Y"/>
+<div class="flex flex-col">
+<span class="text-xs font-bold truncate">James Miller</span>
+<span class="text-[10px] text-on-surface-variant">Spencers</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant ml-auto text-sm" data-icon="account_circle">account_circle</span>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-60 flex flex-col min-h-screen relative overflow-y-auto pb-10">
+<!-- Predicted Component: TopNavBar / Command Bar -->
+<header class="sticky top-0 z-50 flex justify-center items-center w-full px-8 py-4 pointer-events-none">
+<div class="glass-command shadow-ambient rounded-xl max-w-3xl w-full flex items-center px-4 py-3 gap-3 border border-outline-variant/15 pointer-events-auto">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+<input class="bg-transparent border-none focus:ring-0 flex-1 text-xs font-mono tracking-tight text-on-surface-variant placeholder:text-outline" placeholder="Search listings or ask me anything... e.g. 'Which listings need my attention?'" type="text"/>
+<div class="flex items-center gap-2">
+<kbd class="px-2 py-1 bg-surface-container-highest rounded text-[10px] font-mono text-on-surface-variant">⌘K</kbd>
+<div class="h-4 w-px bg-outline-variant/30 mx-2"></div>
+<span class="material-symbols-outlined text-on-surface-variant text-sm hover:text-primary cursor-pointer" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm hover:text-primary cursor-pointer" data-icon="help_outline">help_outline</span>
+</div>
+</div>
+</header>
+<section class="max-w-6xl mx-auto w-full px-12 pt-4 space-y-8">
+<!-- AI Briefing Card -->
+<div class="bg-primary/5 border border-primary/10 rounded-2xl p-6 relative flex items-start gap-4">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex-1 space-y-2">
+<p class="text-sm font-medium leading-relaxed">
+                        Good morning, James. You have 2 reports ready to review and 1 listing awaiting architect selection based on recent proposals.
+                    </p>
+<div class="flex gap-4 pt-1">
+<a class="text-xs font-bold text-primary flex items-center gap-1 group" href="#">
+                            Review Bath Road report <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="text-xs font-bold text-primary flex items-center gap-1 group" href="#">
+                            Select architect for Mill Street <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+</button>
+</div>
+<!-- Feed Section -->
+<div class="space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="text-xl font-bold tracking-tight text-on-surface">Recent Activity</h2>
+<p class="text-xs text-on-surface-variant mt-0.5">Updates across your portfolio in the last 72 hours</p>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 hover:brightness-110 transition-all shadow-md shadow-primary/10">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                        New Listing
+                    </button>
+</div>
+<div class="space-y-4">
+<!-- Row 1: High Highlight -->
+<div class="bg-primary-fixed/30 hover:bg-primary-fixed/40 transition-colors h-20 rounded-xl px-4 flex items-center gap-6 group cursor-pointer">
+<img alt="14 Church Lane" class="w-20 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Modern house architecture with clean lines, large glass windows, and lush green garden landscaping in daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcy2Fe04d4BT9rtmo28iy1lA_iog_jdfP6P4FAnVdj2ymBrHUzI3RpUJZY1vywvxFi81IGGv8Li5IV_Jbi-H2GbsIXIyaxGqtoCTxiInUJvTRRTRVPs1qVJTyHpGExpC2vzPy4q5KNLApmIgJAckMvfUfOBPnukwLh2Aw16P_OvEdq_CjVoho6BFN3w2yZ4b1O_mmPT2FLop7ZUEKAeyJLHZ_iDqm30JuwTCdRucJbx5lg4E9Ix_E54QmL5uaTGrRih4Q0rFKk67U"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm truncate">14 Church Lane, Bristol</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-bold text-on-surface-variant rounded uppercase tracking-wider">House</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">Spacecraft submitted design · 2h ago</p>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-xs font-bold text-primary group-hover:underline">Review Report →</button>
+<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(0,104,95,0.6)]"></div>
+</div>
+</div>
+<!-- Row 2: High Highlight -->
+<div class="bg-primary-fixed/30 hover:bg-primary-fixed/40 transition-colors h-20 rounded-xl px-4 flex items-center gap-6 group cursor-pointer">
+<img alt="72 Bath Road" class="w-20 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Elegant Bath stone apartment building facade with classic architectural details and sash windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_gb6fX5LMwaskAgIjhsmKDbLAESroPOAq2AkM-HNtJxOJ4WUegU17pq2L-ErWqkdEPAqM-_fyXfC1xz75wkUQ3WP4zDYxAR6An45mF0kq9uruoJ8V7BUCqzCybd58GmTkKgsRhS_4zUbYZnXmbiBrCcE-O_gZjD-Qw4EMq6pBFy9cDnu0oIqjOMjP2nsyByZF3B-9HHzqSKOXYUemRbTNRSQ8Kbw8_pKxqrmxDpxetoj-eiL6JLPJzXuBq5aSKCTUSIgrowR1Bo0"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm truncate">72 Bath Road, Bath</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-bold text-on-surface-variant rounded uppercase tracking-wider">Flat</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">3 architects expressed interest · 5h ago</p>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-xs font-bold text-primary group-hover:underline">Select Architect →</button>
+<div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(70,72,212,0.6)]"></div>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="bg-surface-container-lowest hover:bg-surface-container hover:shadow-sm transition-all h-20 rounded-xl px-4 flex items-center gap-6 group cursor-pointer">
+<img alt="Flat 4, Mill Street" class="w-20 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Contemporary interior of a loft apartment with industrial style windows and exposed brickwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiy03xOhe3jNMbF77LnSCbczgbx6oVXwXmzddcSLyDOU2y04Iw84_w3KONQO6dpwD3V7bgNZOPUpJ0Us-_hRz4q82MP15XiCnbTycSdXLIpeD-sR9X90GymerFhBWmpW69ZzbxqKlRpQStfLD9ryZqClfwUP0mFlbR54aggIWjzLsMbnvT7nLu8Sw_k7LBO5rIx2Lc6bQe0v2cKO2qyPMAUqUaDApr6gsi5d5w6e_eKHccqNh7VUiC-Xriignl5h0S9Q4ggRDjjKk"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm truncate">Flat 4, Mill Street, Bristol</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-bold text-on-surface-variant rounded uppercase tracking-wider">Flat</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">Spacecraft Architecture assigned · deadline in 6h</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-2 h-2 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]"></div>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="bg-surface-container-lowest hover:bg-surface-container hover:shadow-sm transition-all h-20 rounded-xl px-4 flex items-center gap-6 group cursor-pointer">
+<img alt="8 Victoria Terrace" class="w-20 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Victorian era terrace house with ornate architecture and bright blue front door, street view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaVK7o2284HU8EFOxfm3s3gLjaHtauLdqD81Urjk_tvgMiy4gYVykRZncm2FyMxa2o_yIk0tMtfqEmHCffxnDhAPnkDcQ4qBKSyDWCSOlzbwMPXlh5--sY3XTN_7Fzc60RPJrI75_f9u_deALTc4h2qCm-WwrxXQ8Rsjp2t0SFD_YhRuQ4lEE2-BmlTZuogthzp4_rdXGfb3YY7LT1d0tBNj96LMO43ch3KmAuH97BY8BAgWG4jcnFKr7THGBmTRh0xJ2Fgrp9_00"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm truncate">8 Victoria Terrace, Clifton</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-bold text-on-surface-variant rounded uppercase tracking-wider">House</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1 italic">AI research running... · just now</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(70,72,212,0.6)]"></div>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="bg-surface-container-lowest hover:bg-surface-container hover:shadow-sm transition-all h-20 rounded-xl px-4 flex items-center gap-6 group cursor-pointer">
+<img alt="22 Park Avenue" class="w-20 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Classic terraced house with large bay windows and white exterior trim, sunny day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbXbzd8Cj_5fyNcxsiLxSADGi6yZO_V7xQLUqRbZTXtweL-FK1qaqb2KN_NxL_HnypMQrLeqcovDUFOsn7HxRA285-cBFD6LLUxm_uSVhVs8uhHkSZ38h3LPXLi7aU0LbGCfjT0B1h9WWe4aOljCVP67n65h1OmPbAlb9fWgTN8GdqD8k3NzJYCLZCqZTCNhx52i9aMVYsmMD0CZmvYtg2Z8j990uobLprK_GHg8_3YIPB-qcRStb8BMrYLyLYHFQ9wvshCd71Zs8"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm truncate">22 Park Avenue, Bath</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-bold text-on-surface-variant rounded uppercase tracking-wider">Terraced</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">Report shared with client · 1 day ago</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(0,104,95,0.6)]"></div>
+</div>
+</div>
+<!-- Row 6: Greyed Out -->
+<div class="bg-surface opacity-60 h-20 rounded-xl px-4 flex items-center gap-6 group grayscale">
+<img alt="Old Rectory" class="w-20 h-14 rounded-lg object-cover flex-shrink-0" data-alt="Large historic stone country house surrounded by ancient trees and soft morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6lEBEvs7VSA5SA1pAeSlEZkD7mKxwsNYDx6IeF0Kr945lnlQ3H8swDszb2avAbtpq5OuxZncdmWPwEUvkBnNbJYok440jjCyhn4RwkN2Hi7jV6zWjYUn8BCXEykQCAP372NdmqollrSCCvv3jLMF1ewbDPhmQvx19FaFKvF_Q5k_YkzdXcrWQ--aMz2xEX9uPvTuhb-kjfouwcBVABUxbQ8oLY0_Gd-XrJhFj9IiHdGydBQhgrEepgVt7gBL1kWtEIgAgGteiEPE"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-bold text-sm truncate text-outline">Old Rectory, Chew Magna</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[10px] font-bold text-outline rounded uppercase tracking-wider">Detached</span>
+</div>
+<p class="text-xs text-outline mt-1">Marked as not progressing · 3 days ago</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-2 h-2 rounded-full bg-outline shadow-[0_0_8px_rgba(109,122,119,0.3)]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Predicted Component: Footer / Stats Bar -->
+<footer class="fixed bottom-0 right-0 left-60 flex justify-between items-center px-8 h-10 bg-slate-50/80 backdrop-blur-md border-t border-slate-200/10 font-mono text-[10px] uppercase tracking-widest z-40">
+<div class="flex gap-8 items-center text-on-surface-variant">
+<span class="flex items-center gap-2">
+<span class="text-primary font-bold">Active Listings:</span>
+<span class="text-on-surface">12 <span class="text-primary">+2 this week</span></span>
+</span>
+<div class="w-px h-3 bg-outline-variant/30"></div>
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[12px]" data-icon="auto_awesome">auto_awesome</span>
+                Press ⌘K to access AI curator · <span class="text-secondary font-bold">04 due today</span>
+</span>
+</div>
+<div class="flex gap-8 items-center text-on-surface-variant">
+<span class="flex items-center gap-2">
+<span class="text-on-surface-variant">Client Feedback:</span>
+<span class="text-primary font-bold">98% Satisfied</span>
+</span>
+<span class="text-outline font-sans lowercase opacity-50">Possible v1.0.4</span>
+</div>
+</footer>
+</body></html>

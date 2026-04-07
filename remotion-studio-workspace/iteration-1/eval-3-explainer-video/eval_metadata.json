@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "explainer-cinematic",
+  "prompt": "I need to build an animated explainer video using React, with motion graphics and text animations that have a cinematic feel. Can you scaffold a project for me?",
+  "assertions": [
+    "Output includes a component using CameraMotionBlur from @remotion/motion-blur",
+    "Output uses spring() function for physics-based animation",
+    "Output includes text animation with transform and/or opacity changes",
+    "Package list includes @remotion/motion-blur",
+    "A guide or reference file is produced explaining key packages and their usage"
+  ]
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pickle - Electric Live Game</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7bf425",
+                        "electric-blue": "#2de2ff",
+                        "hot-pink": "#ff2d85",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0a0a0a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "sans": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    borderWidth: {
+                        '3': '3px',
+                        '4': '4px',
+                        '6': '6px',
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #7bf425;
+        }
+        .host-gradient {
+            background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+        }
+        .vibrant-glow {
+            box-shadow: 0 0 20px rgba(123, 244, 37, 0.4);
+        }
+        .vibrant-glow-red {
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
+        }
+        .neon-border {
+            border: 3px solid #000;
+            box-shadow: 4px 4px 0px #000;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light text-slate-900 min-h-screen flex flex-col font-sans">
+<header class="sticky top-0 z-50 bg-white border-b-4 border-black px-4 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-red-600 text-white text-[12px] font-black px-3 py-1 rounded-sm flex items-center gap-1.5 uppercase tracking-tighter vibrant-glow-red">
+<span class="size-2 bg-white rounded-full animate-pulse"></span>
+            Live
+        </div>
+<div class="bg-black text-white px-3 py-1 rounded-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] fill-1">visibility</span>
+<span class="text-[12px] font-black font-display tracking-tight">1,428</span>
+</div>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2">
+<span class="font-display font-black text-xl italic tracking-tighter uppercase italic">Pickle</span>
+</div>
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 border-2 border-black">
+<span class="material-symbols-outlined font-bold">close</span>
+</button>
+</header>
+<main class="flex-1 overflow-y-auto pb-32">
+<div class="p-4 bg-black">
+<div class="relative aspect-video rounded-2xl overflow-hidden border-4 border-primary vibrant-glow">
+<img alt="Host" class="w-full h-full object-cover grayscale-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgxew439VlS2MVNc04HoMWsSDaK5Cz2eKIIla22TgGTbxM1kyj5huwncKTUi1O1dWc-pwI8cdAe-YcJvKnCeRbCAEusxNhWWr9og7BvRIIEMkToHsZdxN9kQtvs13ShRTrmmzZthEsgq9AX2cLmCXnrauT7rl3NqnBw_095omZkbTNZgDnCayRlIa3FDrpdfTGbf04xw0x93sAefh_XE-kQbRL2wPb9LCJv00ZFQvehVvQu_YWhxN4Ss7hYSDJrQaGxLInw9hPGZ-n"/>
+<div class="absolute inset-0 host-gradient"></div>
+<div class="absolute top-4 left-4 flex items-center gap-2">
+<div class="bg-primary text-black text-[12px] font-black px-3 py-1 uppercase border-2 border-black">Host</div>
+<span class="text-white text-lg font-display font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">Sarah J.</span>
+</div>
+<div class="absolute -bottom-2 inset-x-0 p-4">
+<div class="bg-white border-4 border-black p-5 shadow-[6px_6px_0px_#7bf425] transform -rotate-1">
+<p class="text-[11px] uppercase font-black text-slate-500 tracking-[0.2em] mb-1">Question for the group</p>
+<p class="text-xl md:text-2xl font-display font-black leading-none text-black uppercase">
+                        "What's your ultimate 'red flag' on a first date at a coffee shop?"
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 pt-12 pb-6 space-y-6">
+<div class="flex items-center justify-between border-b-2 border-black pb-2">
+<h3 class="text-sm font-black uppercase tracking-widest text-black font-display">The Contestants</h3>
+<span class="text-[10px] font-bold text-slate-400 uppercase">3 Active</span>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="relative group">
+<div class="relative h-40 bg-slate-100 rounded-none border-4 border-black overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(#7bf425_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<span class="material-symbols-outlined text-8xl text-black/10 blur-[2px]">person</span>
+<div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-4">
+<div class="bg-white border-2 border-black p-3 translate-y-2 transform rotate-1">
+<p class="text-black font-bold text-sm leading-tight">"When they don't say thank you to the barista. Huge ick! 🚩"</p>
+</div>
+</div>
+</div>
+<div class="absolute -top-3 -right-2 bg-primary border-2 border-black px-3 py-1 font-display font-black text-[11px] uppercase shadow-[3px_3px_0px_#000]">
+                    82% Match
+                </div>
+<div class="mt-2 flex items-center gap-2">
+<div class="size-3 bg-black rounded-full"></div>
+<span class="font-display font-black uppercase text-sm tracking-tight">Contestant #1</span>
+</div>
+</div>
+<div class="relative group">
+<div class="relative h-40 bg-primary/10 rounded-none border-4 border-black overflow-hidden flex items-center justify-center vibrant-glow">
+<div class="absolute inset-0 opacity-30 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:12px_12px]"></div>
+<span class="material-symbols-outlined text-8xl text-primary/30">person</span>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-black text-primary px-4 py-2 border-2 border-black font-display font-black italic text-lg animate-pulse">
+                            TYPING...
+                        </div>
+</div>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<div class="size-3 bg-primary rounded-full animate-ping"></div>
+<span class="font-display font-black uppercase text-sm tracking-tight text-primary">Contestant #2</span>
+</div>
+</div>
+<div class="relative group">
+<div class="relative h-40 bg-slate-100 rounded-none border-4 border-black overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-8xl text-black/10">person</span>
+<div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-4">
+<div class="bg-white border-2 border-black p-3 translate-y-2 transform -rotate-1">
+<p class="text-black font-bold text-sm leading-tight">"Checking their phone every 2 minutes. Like, I'm right here?"</p>
+</div>
+</div>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<div class="size-3 bg-slate-300 rounded-full"></div>
+<span class="font-display font-black uppercase text-sm tracking-tight text-slate-400">Contestant #3</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4">
+<div class="bg-white border-4 border-black p-4 flex items-center gap-4 shadow-[8px_8px_0px_#000]">
+<div class="size-16 rounded-none border-4 border-black overflow-hidden shrink-0">
+<img alt="Venue" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5omCPGJ_BSy1GqgDhhVg09bSCJ7A84SsQd7NsBiwrloGe-9dCkSao0nKmwS9IudICBDFwnMRbwlQ9sfduFDvJtuMWWiiaWej2tYv3fuyJ7XNBwAHyreOZ9d1gxwGmoVJ_vU3OQpIuFpbZfSxU_R2bTNOyGSXZ38bAZLQMCTIlgj5qthhCRT1_dhBLI-g695zDNGlkCEXI21JiDtFYDfderJ7N7XfWK0l52d3vdILLGumBNQytMFTaRAc723ctOIrmQktvmSIrjEoW"/>
+</div>
+<div class="flex-1">
+<p class="text-[10px] font-black text-hot-pink uppercase tracking-widest mb-1 italic">Tonight's Reward Venue</p>
+<p class="font-display font-black text-lg leading-none uppercase">The Green Bean Cafe</p>
+<div class="flex items-center gap-1 text-[11px] font-bold mt-1 text-slate-500">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Campus North • 200m away</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-black font-black">arrow_forward_ios</span>
+</div>
+</div>
+</main>
+<div class="fixed bottom-[96px] inset-x-0 px-4 flex items-center gap-3 pointer-events-none">
+<div class="flex-1 h-14 bg-white border-4 border-black px-5 flex items-center pointer-events-auto shadow-[4px_4px_0px_#000]">
+<p class="text-slate-400 font-bold text-sm uppercase italic">Say something electric...</p>
+</div>
+<button class="size-14 bg-hot-pink border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_#000] pointer-events-auto active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-white font-black fill-1 text-3xl">favorite</span>
+</button>
+</div>
+<nav class="fixed bottom-0 inset-x-0 bg-white border-t-4 border-black px-6 pt-3 pb-8 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400 group" href="#">
+<span class="material-symbols-outlined text-3xl group-hover:text-black">explore</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Discover</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black" href="#">
+<div class="relative">
+<span class="material-symbols-outlined text-3xl fill-1">sensors</span>
+<span class="absolute -top-1 -right-1 size-3 bg-red-600 border-2 border-white rounded-full"></span>
+</div>
+<span class="text-[10px] font-black uppercase tracking-tighter">Live</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 group" href="#">
+<span class="material-symbols-outlined text-3xl group-hover:text-black">map</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Venues</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 group" href="#">
+<span class="material-symbols-outlined text-3xl group-hover:text-black">person</span>
+<span class="text-[10px] font-black uppercase tracking-tighter">Profile</span>
+</a>
+</nav>
+
+</body></html>
