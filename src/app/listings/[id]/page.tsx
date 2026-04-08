@@ -1,12 +1,16 @@
 import Link from 'next/link';
 import AppSidebar from '@/components/AppSidebar';
+import ResearchPanel from '@/components/ResearchPanel';
+import type { PropertyInput } from '@/lib/ai/types';
 
 // Listing data by ID
 const listings: Record<string, {
   address: string;
   shortAddress: string;
   type: string;
+  tenure: string;
   valuation: string;
+  valuationNum: number;
   status: string;
   statusLabel: string;
   architect: string | null;
@@ -17,7 +21,9 @@ const listings: Record<string, {
     address: '14 Church Lane, Bristol, BS1 4QR',
     shortAddress: '14 Church Lane',
     type: 'Terraced House',
+    tenure: 'Freehold',
     valuation: '£485,000',
+    valuationNum: 485000,
     status: 'awaiting-review',
     statusLabel: 'Awaiting Review',
     architect: 'Spacecraft Architecture',
@@ -28,7 +34,9 @@ const listings: Record<string, {
     address: '72 Bath Road, Bath, BA1 3DW',
     shortAddress: '72 Bath Road',
     type: 'Flat',
+    tenure: 'Leasehold',
     valuation: '£310,000',
+    valuationNum: 310000,
     status: 'select-architect',
     statusLabel: 'Select Architect',
     architect: null,
@@ -39,7 +47,9 @@ const listings: Record<string, {
     address: 'Flat 4, Mill Street, Bristol, BS1 2BB',
     shortAddress: 'Flat 4, Mill Street',
     type: 'Flat',
+    tenure: 'Leasehold',
     valuation: '£275,000',
+    valuationNum: 275000,
     status: 'awaiting-review',
     statusLabel: 'Awaiting Review',
     architect: 'Spacecraft Architecture',
@@ -87,6 +97,13 @@ const architects = [
 export default function ListingDetail({ params }: { params: { id: string } }) {
   const listing = listings[params?.id] ?? listings['1'];
   const isSelectArchitect = listing.status === 'select-architect';
+
+  const propertyInput: PropertyInput = {
+    address: listing.address,
+    type: listing.type,
+    tenure: listing.tenure,
+    current_valuation: listing.valuationNum,
+  };
 
   return (
     <div className="bg-surface text-on-surface min-h-screen">
@@ -348,6 +365,11 @@ export default function ListingDetail({ params }: { params: { id: string } }) {
                 </div>
               </div>
 
+              {/* AI Research Panel — live research trigger */}
+              <ResearchPanel
+                listingId={params?.id ?? '1'}
+                property={propertyInput}
+              />
             </div>
             )} {/* end timeline conditional */}
           </div>
